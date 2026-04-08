@@ -1,0 +1,215 @@
+* {
+    margin: 0;          /* Menghapus jarak luar bawaan browser */
+    padding: 0;         /* Menghapus jarak dalam bawaan browser */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Mengatur jenis huruf agar modern */
+}
+
+body {
+    background-color: #d4e2a6; /* Memberikan warna latar belakang halaman (hijau muda) */
+    color: #333;               /* Mengatur warna teks utama agar mudah dibaca */
+}
+
+/* 2. NAVIGATION BAR (Bagian Menu Atas) */
+nav {
+    display: flex ;               /* Mengaktifkan mode flexbox agar item bisa sejajar ke samping */
+    justify-content: space-between; /* Membuat logo di kiri dan menu di kanan (memberi ruang di tengah) */
+    align-items: center;         /* Menyejajarkan logo dan menu secara vertikal agar rapi */
+    padding: 20px 8%;            /* Jarak atas-bawah 20px, kanan-kiri 8% dari lebar layar */
+    background-color: white;     /* Warna latar menu putih */
+}
+
+nav h2 {
+    color: #3e1edf; /* Memberikan warna biru pada logo FILM.ID */
+}
+
+nav ul {
+    display: flex;       /* Membuat daftar menu (Home, Daftar, Login) sejajar ke samping */
+    list-style: none;    /* Menghapus titik-titik (bullet) pada daftar menu */
+    gap: 20px;           /* Memberi jarak antar menu sebesar 20px */
+}
+
+nav ul li a {
+    text-decoration: none; /* Menghapus garis bawah pada link menu */
+    color: #555;           /* Warna teks menu abu-abu tua */
+    font-weight: 500;      /* Mengatur ketebalan huruf menu */
+    transition: 0.3s;      /* Animasi halus saat warna berubah (hover) */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Mengubah warna menu menjadi biru saat kursor mendekat */
+}
+
+/* 3. HERO SECTION (Bagian Utama/Promosi) */
+header {
+    display: flex;               /* Menggunakan flexbox untuk membagi area teks dan foto */
+    justify-content: space-between; /* Teks di kiri, foto di kanan */
+    align-items: center;         /* Menyejajarkan teks dan foto agar sejajar di tengah */
+    padding: 60px 8%;            /* Memberi jarak yang cukup luas agar konten tidak sesak */
+    background-color: #d1e2a5;   /* Latar belakang hijau sesuai desain */
+    gap: 20px;                   /* Jarak minimal antara teks dan foto */
+}
+
+.satu { 
+    flex: 1;                     /* Mengambil ruang yang tersedia secara adil di sisi kiri */
+    display: flex;
+    flex-direction: column;      /* Membuat judul, paragraf, dan tombol berderet ke bawah */
+    align-items: flex-start;     /* Memastikan semua elemen teks rata kiri */
+}
+
+.satu h1 {
+    font-size: 3rem;             /* Ukuran judul besar agar menjadi fokus utama */
+    margin-bottom: 20px;         /* Jarak bawah judul ke paragraf */
+    color: #333;
+    max-width: 500px;            /* Membatasi lebar teks judul agar tidak terlalu panjang */
+}
+
+.satu p {
+    margin-bottom: 30px;         /* Jarak bawah paragraf ke tombol */
+    max-width: 450px;
+    line-height: 1.6;            /* Mengatur jarak antar baris teks agar enak dibaca */
+}
+
+/* 4. BUTTON STYLE (Tombol "Cari Film Sekarang") */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;          /* Ukuran tombol agar terlihat proporsional */
+    background-color: #0984e3;   /* Warna biru tombol */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;         /* Membuat sudut tombol membulat (bentuk kapsul) */
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek halus saat tombol ditekan/hover */
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* Membuat tombol seolah melompat naik sedikit saat di-hover */
+    box-shadow: 0 5px 15px rgba(9, 132, 227, 0.4); /* Memberi bayangan biru bercahaya saat hover */
+}
+
+/* 5. HERO IMAGE (Foto Poster Utama) */
+.dua { 
+    flex: 1;                     /* Mengambil ruang di sisi kanan */
+    display: flex;
+    justify-content: flex-end;   /* Mendorong foto agar sejajar mepet ke arah menu Login */
+}
+
+.dua img {
+    width: 100%;
+    max-width: 300px;            /* Membatasi lebar foto agar tidak terlalu besar */
+    border-radius: 25px;         /* Sudut foto membulat cantik */
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1); /* Bayangan lembut di bawah foto */
+}
+
+.dua img:hover {
+    transform: scale(1.05);      /* Efek zoom kecil saat kursor di atas foto */
+}
+
+/* 6. SEARCH BAR SECTION (Judul "Sedang Tayang") */
+.tiga {
+    padding: 40px 8% 20px;       /* Jarak area judul film */
+}
+
+.tiga header {
+    padding: 0;                  /* Menghapus padding bawaan header di dalam section ini */
+    display: flex;
+    justify-content: space-between; /* Tulisan di kiri, kotak cari di kanan */
+    align-items: center;
+    border-bottom: 2px solid #007bff; /* Garis biru di bawah judul Sedang Tayang */
+    padding-bottom: 10px;
+}
+
+.tiga input {
+    padding: 10px 15px;          /* Memberi ruang di dalam kotak pencarian */
+    border-radius: 25px;         /* Membuat kotak pencarian membulat */
+    border: 1px solid #ddd;      /* Warna garis tepi kotak cari */
+    outline: none;               /* Menghapus garis biru bawaan browser saat diklik */
+    width: 250px;                /* Lebar kotak pencarian */
+}
+
+/* 7. MOVIE GRID (Daftar Film Berbentuk Kartu) */
+.empat {
+    display: grid;               /* Mengaktifkan sistem Grid agar film tersusun rapi */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Kolom otomatis menyesuaikan lebar layar */
+    gap: 25px;                   /* Jarak antar kartu film */
+    padding: 20px 8% 50px;
+}
+
+.empat div {
+    background: white;           /* Latar belakang kartu film putih */
+    padding: 15px;
+    border-radius: 15px;         /* Sudut kartu membulat */
+    text-align: center;          /* Teks di dalam kartu rata tengah */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Bayangan tipis agar kartu terlihat mengambang */
+    transition: 0.3s;            /* Kecepatan animasi kartu saat di-hover */
+}
+
+.empat div:hover {
+    transform: translateY(-10px); /* Kartu naik ke atas saat didekati kursor */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Bayangan kartu menebal saat hover */
+}
+
+.empat div img {
+    width: 100%;
+    height: 300px;               /* Mengunci tinggi poster agar semua film sejajar rapi */
+    object-fit: cover;           /* Gambar dipotong otomatis agar tidak gepeng/distorsi */
+    border-radius: 10px;
+    margin-bottom: 15px;         /* Jarak bawah poster ke teks judul */
+}
+
+/* 8. FITUR KEUNGGULAN (Bagian Konfirmasi Instan, dll) */
+.lima {
+    display: flex;               /* Menyusun tiga kolom fitur ke samping */
+    justify-content: space-between;
+    gap: 30px;                   /* Jarak antar kotak fitur */
+    padding: 60px 8%;
+    background-color: #ffffff; 
+    text-align: center;
+}
+
+.lima div {
+    flex: 1;                     /* Membagi lebar area secara rata untuk setiap kotak */
+    padding: 30px;
+    border-radius: 15px;
+    background: #fdfdfd;
+    transition: 0.3s;
+    border: 1px solid #eee;      /* Garis luar tipis pada kotak fitur */
+}
+
+.lima h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.lima h3::after {
+    content: '';                 /* Membuat garis dekorasi di bawah judul fitur */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;                 /* Panjang garis biru pendek */
+    height: 3px;                 /* Tebal garis */
+    background-color: #007bff;   /* Warna garis biru */
+}
+
+.enam {
+    width: 100%;
+    background-color: #f1f1f1; /* Tambahkan warna latar belakang tipis agar batasnya jelas */
+    padding: 30px 0;           /* Beri ruang atas dan bawah yang lebih lega */
+    display: flex;             /* Menggunakan flexbox untuk memastikan posisi tengah */
+    justify-content: center;   /* Menyejajarkan konten di tengah secara horizontal */
+    align-items: center;       /* Menyejajarkan konten di tengah secara vertikal */
+}
+
+.enam h3 {
+    color: #333333;           /* Gunakan abu-abu gelap agar tidak terlalu kontras dengan putih */
+    font-size: 0.9rem;        /* Ukuran font sedikit dikecilkan agar elegan */
+    font-weight: 400;         /* Sedikit lebih tebal agar mudah dibaca */
+    letter-spacing: 2px;      /* Jarak antar huruf dikurangi agar tidak terlalu lebar */
+    opacity: 0.7;             /* Memberikan kesan watermark halus */
+    max-width: 90%;           /* Memastikan teks tidak menempel ke pinggir di layar HP */
+    line-height: 1.5;         /* Memberi jarak antar baris jika teks turun ke bawah */
+}
