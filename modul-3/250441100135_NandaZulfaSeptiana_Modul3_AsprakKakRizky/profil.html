@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="icon" type="image/png" href="img/kab-mjk.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-red-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
+                    <img src="img/kab-mjk.png" alt="">
+                </div>
+                <span class="text-xl font-bold tracking-wider">KECAMATAN DLANGGU</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="beranda.html" class="hover:text-blue-300 transition">Beranda</a>
+                <a href="#" class="hover:text-blue-300 transition">Profil</a>
+                <a href="layanan.html" class="hover:text-blue-300 transition">Layanan</a>
+                <a href="#kontak" class="hover:text-blue-300 transition">Kontak</a>
+            </div>
+            <button class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <section class="pb-20 pt-10 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-blue-900 border-l-4 border-blue-600 pl-4">Data Wilayah</h2>
+        <div class="grid grid-cols-5 gap-10">
+            <div class="bg-gray-500 h-48 rounded-2xl flex flex-col items-center justify-center text-white p-4 mt-8">
+                <span class="text-3xl font-bold">16</span>
+                <span class="text-sm">Desa/Kelurahan</span>
+            </div>
+            <div class="bg-gray-600 h-48 rounded-2xl flex flex-col items-center justify-center text-white p-4 mt-8">
+                <span class="text-3xl font-bold">35.16.09</span>
+                <span class="text-sm">Kode Kemendagri</span>
+            </div>
+            <div class="bg-gray-500 h-48 rounded-2xl flex flex-col items-center justify-center text-white p-4 mt-8">
+                <span class="text-3xl font-bold">35,82 Km2</span>
+                <span class="text-sm">Luas Wilayah</span>
+            </div>
+            <div class="bg-gray-600 h-48 rounded-2xl flex flex-col items-center justify-center text-white p-4 mt-8">
+                <span class="text-3xl font-bold">58.258 Jiwa</span>
+                <span class="text-sm">Total Penduduk</span>
+            </div>
+            <div class="bg-gray-500 h-48 rounded-2xl flex flex-col items-center justify-center text-white p-4 mt-8">
+                <span class="text-3xl font-bold">61371</span>
+                <span class="text-sm">Kode Pos</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-5 pt-10 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-blue-900 border-l-4 border-blue-600 pl-4 ">Daftar Desa dan Dusun</h2>
+    <div class="container mx-auto py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-400 bg-white shadow-sm">
+                    <thead class="bg-blue-700 text-white">
+                        <tr>
+                            <th class="border border-gray-400 px-4 py-2 text-sm">No</th>
+                            <th class="border border-gray-400 px-4 py-2 text-sm">Nama Desa</th>
+                            <th class="border border-gray-400 px-4 py-2 text-sm">Nama Dusun</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">1</td>
+                            <td class="border border-gray-400 px-4 py-2">Dlanggu</td>
+                            <td class="border border-gray-400 px-4 py-2">Kademangan, Segaran, Sroyo</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">2</td>
+                            <td class="border border-gray-400 px-4 py-2">Jrambe</td>
+                            <td class="border border-gray-400 px-4 py-2">Jrambe, Kauman, Sumberagung</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">3</td>
+                            <td class="border border-gray-400 px-4 py-2">Kalen</td>
+                            <td class="border border-gray-400 px-4 py-2">Kalen, Bendo Lor, Kalang, Simping</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">4</td>
+                            <td class="border border-gray-400 px-4 py-2">Kedunggede</td>
+                            <td class="border border-gray-400 px-4 py-2">Kedunggede, Bendo Kidul, Bungu, Josermo, Karangasem, Klampisan, Ngegod, Sukoanyar</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">5</td>
+                            <td class="border border-gray-400 px-4 py-2">Kedunglengkong</td>
+                            <td class="border border-gray-400 px-4 py-2">Badung, Banjarsari, Lengkong</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">6</td>
+                            <td class="border border-gray-400 px-4 py-2">Mojokarang</td>
+                            <td class="border border-gray-400 px-4 py-2">Jatisari, Mojo, Mojogeneng, Penilih, Sembung</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">7</td>
+                            <td class="border border-gray-400 px-4 py-2">Ngembeh</td>
+                            <td class="border border-gray-400 px-4 py-2">Ngembeh, Ardilangu, Gajah, Juwono, Ketangi, Pulosari</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">8</td>
+                            <td class="border border-gray-400 px-4 py-2">Pohkecik</td>
+                            <td class="border border-gray-400 px-4 py-2">Pohkecik, Jabaran, Jangkang, Kasiyan</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">9</td>
+                            <td class="border border-gray-400 px-4 py-2">Punggul</td>
+                            <td class="border border-gray-400 px-4 py-2">Dauwan, Graji, Gunungsari, Janti, Karangkletak, Ngembul, Ngepung, Sukoasri</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">10</td>
+                            <td class="border border-gray-400 px-4 py-2">Randugenengan</td>
+                            <td class="border border-gray-400 px-4 py-2">Claket, Genengan, Randugembung, Sambirejo, Sukosari</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">11</td>
+                            <td class="border border-gray-400 px-4 py-2">Sambilawang</td>
+                            <td class="border border-gray-400 px-4 py-2">Sambilawang, Borang, Cepoko, Ngrancang, Sekaran, Sengon, Plaosan</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">12</td>
+                            <td class="border border-gray-400 px-4 py-2">Segunung</td>
+                            <td class="border border-gray-400 px-4 py-2">Segunung, Jani, Kebonalas, Ngrayung, Ploso, Sumberingin</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">13</td>
+                            <td class="border border-gray-400 px-4 py-2">Sumberkarang</td>
+                            <td class="border border-gray-400 px-4 py-2">Karangkletak, Karangnongko, Kertorejo, Ketapang, Sumbersari</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">14</td>
+                            <td class="border border-gray-400 px-4 py-2">Sumbersono</td>
+                            <td class="border border-gray-400 px-4 py-2">Sumbersono, Pekingan, Selorejo, Sumbersari</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">15</td>
+                            <td class="border border-gray-400 px-4 py-2">Talok</td>
+                            <td class="border border-gray-400 px-4 py-2">Talok, Bareng, Gentong, Glonggongan, Klegen, Peting</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2 text-center">16</td>
+                            <td class="border border-gray-400 px-4 py-2">Tumapel</td>
+                            <td class="border border-gray-400 px-4 py-2">Dempel, Seduri, Tarukan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="prose max-w-none px-20">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">Batas Wilayah Kecamatan Dlanggu</h2>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                    <li>Utara : Kecamatan Puri dan Kecamatan Bangsal</li>
+                    <li>Timur : Kecamatan Kutorejo</li>
+                    <li>Selatan : Kecamatan Gondang</li>
+                    <li>Barat : Kecamatan Puri dan Kecamatan Jatirejo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer id="kontak" class="bg-red-900 text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Kontak Kami</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-blue-400"></i> Jl. Jendral Ahmad Yani No.9, Dlanggu, Kec. Dlanggu, Kab. Mojokerto, Jawa Timur 61371 Indonesia</li>
+                    <li class="flex items-center"><i class="fas fa-phone mr-3 text-blue-400"></i> (0321) 510176</li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-3 text-blue-400"></i> dlanggu@mojokerto.go.id</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Tautan Cepat</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400 transition">Berita Terkini</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Transparansi Anggaran</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Galeri Kegiatan</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Media Sosial</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition"><img class="w-8 h-8" src="img/facebook.svg" alt=""></a>
+                    <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition"><img class="w-8 h-8" src="img/instagram.svg" alt=""></a>
+                    <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition"><img class="w-8 h-8" src="img/youtube.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-sm">
+            <p>&copy; 2026 Pemerintah Kecamatan Dlanggu. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

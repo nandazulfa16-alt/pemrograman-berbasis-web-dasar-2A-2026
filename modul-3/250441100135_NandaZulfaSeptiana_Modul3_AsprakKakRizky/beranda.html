@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="icon" type="image/png" href="img/kab-mjk.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-red-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
+                    <img src="img/kab-mjk.png" alt="">
+                </div>
+                <span class="text-xl font-bold tracking-wider">KECAMATAN DLANGGU</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#" class="hover:text-blue-300 transition">Beranda</a>
+                <a href="profil.html" class="hover:text-blue-300 transition">Profil</a>
+                <a href="layanan.html" class="hover:text-blue-300 transition">Layanan</a>
+                <a href="#kontak" class="hover:text-blue-300 transition">Kontak</a>
+            </div>
+            <button class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <header id="beranda" class="relative h-[500px] flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <div class="absolute inset-0">
+            <img src="img/dlanggu.jpg" alt="Profil Dlanggu" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="relative z-20 px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Selamat Datang di Portal Resmi</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-gray-200">Mewujudkan pelayanan publik yang transparan, akuntabel, dan inovatif menuju masyarakat yang sejahtera.</p>
+        </div>
+    </header>
+
+    <section id="definisi" class="pt-20 container mx-auto px-6">
+        <div class="gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-l-4 border-blue-600 pl-4">Definisi</h2>
+                <p class="italic text-gray-600 mb-6">"Dlanggu adalah salah satu kecamatan di Kabupaten Mojokerto yang terletak di tengah. Dlanggu berada di dataran rendah dengan lahan yang didominasi persawahan. Pusat pemerintahan dan ekonomi kecamatan ini berada di Desa Dlanggu yang terdapat Pasar Tanjungsari atau juga sering disebut Pasar Dlanggu."</p> 
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="pt-10 pb-10 container mx-auto px-6">
+        <div class="gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-blue-900 border-l-4 border-blue-600 pl-4">Visi & Misi</h2>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-xl mb-2 text-blue-700">Visi</h3>
+                    <p class="italic text-gray-600 mb-6">"Terwujudnya Kabupaten Mojokerto yang maju, adil dan makmur melalui penguatan insfrastruktur dan peningkatan kwalitas sumberdaya manusia."</p> 
+                    <h3 class="font-bold text-xl mb-2 text-blue-700">Misi</h3>
+                    <p class="italic text-gray-600 mb-6">"Terwujudnya tata kelola pemerintahan yang berintegritas, akuntabel, bersih, transparan."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-red-900 text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Kontak Kami</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-blue-400"></i> Jl. Jendral Ahmad Yani No.9, Dlanggu, Kec. Dlanggu, Kab. Mojokerto, Jawa Timur 61371 Indonesia</li>
+                    <li class="flex items-center"><i class="fas fa-phone mr-3 text-blue-400"></i> (0321) 510176</li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-3 text-blue-400"></i> dlanggu@mojokerto.go.id</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Tautan Cepat</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400 transition">Berita Terkini</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Transparansi Anggaran</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Galeri Kegiatan</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Media Sosial</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition"><img class="w-8 h-8" src="img/facebook.svg" alt=""></a>
+                    <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition"><img class="w-8 h-8" src="img/instagram.svg" alt=""></a>
+                    <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center transition"><img class="w-8 h-8" src="img/youtube.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-sm">
+            <p>&copy; 2026 Pemerintah Kecamatan Dlanggu. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

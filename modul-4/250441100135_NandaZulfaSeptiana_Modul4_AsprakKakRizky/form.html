@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>    
+</head>
+<body class="flex items-center justify-center h-screen bg-amber-300">
+    <div class="flex flex-col border rounded-lg border-slate-700 w-64 py-5">
+        <div class="flex items-center justify-center">
+            <h1 class="font-bold text-xl">Form Login</h1>
+        </div>
+        <div class="flex flex-col px-3 mt-4 justify-center items-center">
+            <label for="nama">Masukkan Nama</label>
+            <input class="w-full border border-slate-700 rounded-full py-2 text-center" type="text" name="" id="nama" placeholder="Masukkan Nama Anda">
+        </div>
+        <div class="flex flex-col px-3 mt-3 justify-center items-center">
+            <label for="ps">Masukkan Password</label>
+            <input class="w-full border border-slate-700 rounded-full py-2 text-center" type="password" name="" id="ps" placeholder="Masukkan Password Anda">
+        </div>
+        <div class="flex flex-col px-3 mt-4 ">
+            <a id="btnSubmit" class="w-full border rounded-full py-2 flex items-center justify-center bg-orange-600 text-white cursor-pointer">Submit</a>
+        </div>
+    </div>
+
+    <script>
+        const tombol = document.getElementById('btnSubmit');
+        const inputNama = document.getElementById('nama');
+        const inputPassword = document.getElementById('ps');
+
+        tombol.addEventListener('click', function() {
+            
+            if (inputNama.value === "" || inputPassword.value === "") {
+                alert("Waduh! Nama dan Password tidak boleh kosong ya.");
+            } else {
+                alert("Login Berhasil! Halo " + inputNama.value);
+                
+                window.location.href = "lp.html";
+            }
+        });
+    </script>
+</body>
+</html>
